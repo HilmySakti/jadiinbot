@@ -18,7 +18,7 @@ class WhatsappBot {
 				await messageHandler(this.conn, message)
 			} catch(e) {
 				console.log("[ERROR] " + e.message)
-				this.conn.sendMessage(message.key.remoteJid, "Terjadi error! coba lagi nanti", "conversation", { quoted: message })
+				this.conn.sendMessage(message.key.remoteJid, "Warning Error! Please Try Again!", "conversation", { quoted: message })
 			}
 		})
 
